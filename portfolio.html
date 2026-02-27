@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TGR Team</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffd369;
+        }
+
+        section {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #444;
+        }
+
+        /* ABOUT */
+        #about p {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* TEAM */
+        .team-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .member {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            width: 250px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .member:hover {
+            transform: translateY(-10px);
+        }
+
+        .member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        /* PROJECT */
+        .project-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .project {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            width: 280px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        /* SKILLS */
+        .skills-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .skills-list li {
+            list-style: none;
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+
+        /* CONTACT */
+        #contact {
+            background: #667eea;
+            color: white;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width: 768px){
+            header h1 {
+                font-size: 28px;
+            }
+
+            section {
+                padding: 40px 5%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>TGR Tech Team</h1>
+        <p>Game Developer | UI/UX Designer | Programmer</p>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>Tentang kami</h2>
+        <p>
+            Saya adalah seorang Game Developer antusias yang berfokus pada pemrograman gameplay dan optimalisasi, berpengalaman menggunakan Unity atau Unreal Engine. Ahli dalam bahasa C# atau C++, saya memiliki keahlian membangun mekanika game 2D/3D yang interaktif. Berpengalaman dalam kolaborasi tim menggunakan Git, serta berkomitmen menciptakan pengalaman bermain yang mulus melalui debugging dan optimasi kode yang efisien.
+        </p>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team">
+        <h2>TGR Team</h2>
+
+        <div class="team-container">
+
+            <div class="member">
+                <img src="DanendraRED.png">
+                <h3>Danendra</h3>
+                <p>CSS Progammer</p>
+            </div>
+
+            <div class="member">
+                <img src="ReigaRED.png" alt="Member 2">
+                <h3>Reiga</h3>
+                <p>Game designer</p>
+            </div>
+
+            <div class="member">
+                <img src="TaksuRED.png" alt="Member 3">
+                <h3>Dewa Taksu</h3>
+                <p>Owner & Game developer</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJECT -->
+    <section id="projects">
+        <h2>TGR Projects</h2>
+
+        <div class="project-container">
+
+            <div class="project">
+                <h3>TDR 3000</h3>
+                <p>TDR 3000 adalah game balap mobil high-octane yang menggabungkan estetika Cyberpunk dengan mekanik drifting yang presisi. Di tahun 3000, aspal bukan lagi sekadar jalanan, melainkan sirkuit energi tempat para pembalap tercepat di galaksi memperebutkan gelar "King of Neon".
+Kuasai kendaraan bertenaga ion, modifikasi mesinmu dengan teknologi alien, dan meluncurlah di jalanan kota terapung yang penuh tantangan!</p>
+            </div>
+
+            <div class="project">
+                <h3>TGR Comunity</h3>
+                <p>tempat dimana semua gamer berkumpul</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Our Skills</h2>
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+        </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: creativeteam@email.com</p>
+        <p>Instagram: @creativeteam</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Creative Tech Team. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
